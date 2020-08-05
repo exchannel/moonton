@@ -19,8 +19,9 @@ echo $p"["$r"=>"$p"]"$r" Github : https://github.com/exchannel"
 echo $p"["$r"=>"$p"]"$r" Youtube: Ex Channel "$p"SUBSCRIBE"
 echo $p"["$p"═════════════════════════════════════"$p"]"
 echo $w"Nb : Harap install bahan terlebih dahulu!"
-echo $w"Masukkan perintah (instal) untuk install bahan"
-echo $w"dan masukkan perintah (masuk) jika sudah install bahan!"
+echo $w"Masukkan perintah (bahan) untuk install bahan"
+echo $w"Masukkan perintah (checker) untuk masuk ke checker"
+echo $w"Masukkan perintah (empass) untuk mencari empas"
 echo $w"Tanpa Tanda Kurung ()"
 echo
 echo $p"["$cy"1"$p"]"$b" Install Bahan"
@@ -29,7 +30,7 @@ echo $p"["$cy"3"$p"]"$b" Dapatkan Empass"
 echo $p"║"
 read -p"╚═[Masukkan perintah]═➢ " mt
 
-if [ $mt = instal ]
+if [ $mt = bahan ]
 then
 clear
 echo $p""
@@ -48,7 +49,7 @@ figlet -f standard MOONTON
 echo
 echo $r"Sebelum menggunakan checker ini, anda harus membuat list empas terlebih dahulu!"
 sleep 3
-cd MoontonChecker;
+cd;cd moonton;cd MoontonChecker
 fi
 
 if [ $mt = empass ]
