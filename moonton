@@ -49,7 +49,7 @@ figlet -f standard MOONTON
 echo
 echo $r"Sebelum menggunakan checker ini, anda harus membuat list empas terlebih dahulu!"
 sleep 3
-cd;cd moonton;cd MoontonChecker
+cd;cd moonton;cd MoontonChecker;python moonton.py
 fi
 
 if [ $mt = empass ]
