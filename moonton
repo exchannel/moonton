@@ -24,7 +24,8 @@ echo $w"dan masukkan perintah (masuk) jika sudah install bahan!"
 echo $w"Tanpa Tanda Kurung ()"
 echo
 echo $p"["$cy"1"$p"]"$b" Install Bahan"
-echo $p"["$cy"2"$p"]"$b" Masuk Ke Tools"
+echo $p"["$cy"2"$p"]"$b" Masuk ke Checker"
+echo $p"["$cy"3"$p"]"$b" Dapatkan Empass"
 echo $p"║"
 read -p"╚═[Masukkan perintah]═➢ " mt
 
@@ -45,5 +46,14 @@ clear
 echo $p""
 figlet -f standard MOONTON
 echo
-cd moonton;cd MoontonChecker
+cd MoontonChecker;python moonton.py
+fi
+
+if [ $mt = empass ]
+then
+clear
+echo $p""
+figlet -f standard MOONTON
+echo
+cd MoontonChecker;cd empas-limit;bash empas
 fi
