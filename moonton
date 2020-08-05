@@ -1,0 +1,49 @@
+#!/bin/bash
+clear
+r='\033[31;2m' #merah
+g='\033[32;1m' #hijau
+b='\033[34;2m' #biru
+p='\033[35;1m' #purple
+cy='\033[36;2m' #cyan
+w='\033[37;1m' #putih
+y='\033[33;1m' #kuning
+
+# [Coded By] Rizki18, Youtube : Mhank Tuttorr
+
+echo $r""
+figlet -f standard MOONTON
+echo
+echo $p"["$p"═════════════════════════════════════"$p"]"
+echo $p"["$r"=>"$p"]"$r" Author : Ex Channel"
+echo $p"["$r"=>"$p"]"$r" Github : https://github.com/exchannel"
+echo $p"["$r"=>"$p"]"$r" Youtube: Ex Channel "$p"SUBSCRIBE"
+echo $p"["$p"═════════════════════════════════════"$p"]"
+echo $w"Nb : Harap install bahan terlebih dahulu!"
+echo $w"Masukkan perintah (instal) untuk install bahan"
+echo $w"dan masukkan perintah (masuk) jika sudah install bahan!"
+echo $w"Tanpa Tanda Kurung ()"
+echo
+echo $p"["$cy"1"$p"]"$b" Install Bahan"
+echo $p"["$cy"2"$p"]"$b" Masuk Ke Tools"
+echo $p"║"
+read -p"╚═[Masukkan perintah]═➢ " mt
+
+if [ $mt = instal ]
+then
+clear
+echo $p""
+figlet -f standard Ex Channel
+echo
+echo $p"Harap tunggu, proses instalasi sedang berjalan.."
+sleep 1
+apt install python -y;apt install git -y;pip install requests;pip install futures;pip install bs4;apt install wget -y;apt install figlet -y;git clone https://github.com/dz-id/MoontonChecker;cd MoontonChecker;git clone https://github.com/LimitQueenProject/empas-limit;cd;cd moonton;sh moonton
+fi
+
+if [ $mt = masuk ]
+then
+clear
+echo $p""
+figlet -f standard MOONTON
+echo
+cd moonton;cd MoontonChecker
+fi
