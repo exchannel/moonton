@@ -33,11 +33,11 @@ if [ $mt = instal ]
 then
 clear
 echo $p""
-figlet -f standard Ex Channel
+figlet -f standard MOONTON
 echo
 echo $p"Harap tunggu, proses instalasi sedang berjalan.."
 sleep 1
-apt install python -y;apt install git -y;pip install requests;pip install futures;pip install bs4;apt install wget -y;apt install figlet -y;git clone https://github.com/dz-id/MoontonChecker;cd MoontonChecker;git clone https://github.com/LimitQueenProject/empas-limit;cd;cd moonton;sh moonton
+apt install python -y;apt install nano -y;apt install git -y;pip install requests;pip install futures;pip install bs4;apt install wget -y;apt install figlet -y;git clone https://github.com/dz-id/MoontonChecker;cd MoontonChecker;git clone https://github.com/LimitQueenProject/empas-limit;cd;cd moonton;sh moonton
 fi
 
 if [ $mt = checker ]
@@ -46,7 +46,9 @@ clear
 echo $p""
 figlet -f standard MOONTON
 echo
-cd MoontonChecker;python moonton.py
+echo $r"Sebelum menggunakan checker ini, anda harus membuat list empas terlebih dahulu!"
+sleep 3
+cd MoontonChecker;
 fi
 
 if [ $mt = empass ]
