@@ -40,7 +40,7 @@ sleep 1
 apt install python -y;apt install git -y;pip install requests;pip install futures;pip install bs4;apt install wget -y;apt install figlet -y;git clone https://github.com/dz-id/MoontonChecker;cd MoontonChecker;git clone https://github.com/LimitQueenProject/empas-limit;cd;cd moonton;sh moonton
 fi
 
-if [ $mt = masuk ]
+if [ $mt = checker ]
 then
 clear
 echo $p""
